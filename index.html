@@ -14,67 +14,69 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./assets/calc.js"></script>
 </head>
 <body>
-<div class="container">
-        <div class="col-md-3">
-            <div class="row display">
-                <input type ="text" name="inputwindow" id="inputwindow">
+<div class="container ">
+        <div class="col-md-4 bg-primary">
+            <div class="row ">
+                <input class="btn-success w-100 mx-3" type ="text" name="inputwindow" id="inputwindow">
             </div>
-            <div class="row">
-                <div class="btn-primary col-md-3">
-                    <p class ="" id="one" onclick="takeValue(document.getElementById('one'))">1</p>
+            <div class="row mt-3">
+                <div class="col-md-3">
+                   		<button class="btn-info h-100 w-100" type="button" id="one" value="1" onclick="takeValue(document.getElementById('one').value)">1</button>
                 </div>
-                <div class="btn-primary col-md-3">
-                        <p>2</p>
+                <div class=" col-md-3">
+                        <button  class="btn-info w-100" type="button" id="two" value="2" onclick="takeValue(document.getElementById('two').value)">2</button>
                  </div>
-                 <div class="btn-primary col-md-3">
-                        <p>3</p>
+                 <div class=" col-md-3">
+                        <button  class="btn-info w-100" type="button" id="three" value="3" onclick="takeValue(document.getElementById('three').value)">3</button>
                  </div>
-                 <div class="btn-primary col-md-3">
-                        <p>*</p>
+                 <div  class="col-md-3" >
+                        <button  class="btn-info w-100" type="button" id="by" value="*" onclick="takeValue(document.getElementById('by').value)">*</button>
                  </div>
             </div>
             <div class="row">
-                    <div class="btn-primary col-md-3">
-                        <p class ="">4</p>
+                    <div class=" col-md-3">
+                            <button  class="btn-info w-100" type="button" id="four" value="4" onclick="takeValue(document.getElementById('four').value)">4</button>
                     </div>
-                    <div class="btn-primary col-md-3">
-                            <p>5</p>
+                    <div  class="col-md-3">
+                            <button  class="btn-info w-100" type="button" id="five" value="5" onclick="takeValue(document.getElementById('five').value)">5</button>
                      </div>
-                     <div class="btn-primary col-md-3">
-                            <p>6</p>
+                     <div   class="col-md-3">
+                            <button   class="btn-info w-100"  type="button" id="six" value="6" onclick="takeValue(document.getElementById('six').value)">6</button>
                      </div>
-                     <div class="btn-primary col-md-3">
-                            <p>/</p>
+                     <div  class="col-md-3">
+                            <button class="btn-info w-100" type="button" id="devide" value="/" onclick="takeValue(document.getElementById('devide').value)"> /</button>  
                      </div>
                 </div>
                 <div class="row">
-                        <div class="btn-primary col-md-3">
-                            <p class ="">7</p>
+                        <div class="col-md-3">
+                                <button   class="btn-info w-100" type="button" id="seven" value="7" onclick="takeValue(document.getElementById('seven').value)">7</button>
                         </div>
-                        <div class="btn-primary col-md-3">
-                                <p>8</p>
+                        <div class="col-md-3">
+                                <button  class="btn-info w-100" type="button" id="eight" value="8" onclick="takeValue(document.getElementById('eight').value)">8</button>
                          </div>
-                         <div class="btn-primary col-md-3">
-                                <p>9</p>
+                         <div class="col-md-3">
+                                <button  class="btn-info w-100" type="button" id="nine" value="9" onclick="takeValue(document.getElementById('nine').value)">9</button>
                          </div>
-                         <div class="btn-primary col-md-3">
-                                <p>+</p>
+                         <div class="col-md-3">
+                                <button  class="btn-info w-100" type="button" id="plus" value="+" onclick="takeValue(document.getElementById('plus').value)">+</button>
                          </div>
                     </div>
                     <div class="row">
-                            <div class="btn-primary col-md-3">
-                                <p class ="">-</p>
+                            <div class=" col-md-3">
+                                    <button  class="btn-primary w-100" type="button" id="minus" value="-" onclick="takeValue(document.getElementById('minus').value)">-</button>
                             </div>
-                            <div class="btn-primary col-md-3">
-                                    <p>0</p>
+                            <div class=" col-md-3" >
+                                    <button class="btn-info w-100" type="button" id="zero" value="0" onclick="takeValue(document.getElementById('zero').value)">0</button>
                              </div>
-                             <div class="btn-primary col-md-3">
-                                    <p>=</p>
-                             </div>
-                             <div class="btn-primary col-md-3">
-                                    <p>C</p>
+                             <div   class="col-md-3">
+                                    <button  class="btn-primary w-100" type="button" id="equal" value="=" onclick="calculateResult()">=</button>
+                             </div> 
+                             <div class="col-md-3" >
+                                    <button class="btn-primary w-100" id="clear" value="" onclick="clearInput(document.getElementById('clear').value)" >C</button>
+                                   
                              </div>
                         </div>
                 
